@@ -7,5 +7,7 @@ namespace py = pybind11;
 PYBIND11_MODULE(tutorial, m) {
     py::class_<Person>(m, "Person")
         .def(py::init<const std::string &, int>())
-        .def("greet", &Person::greet);
+        .def("greet", &Person::greet)
+        .def("get_name", &Person::getName)
+        .def("get_age", &Person::getAge);
 }

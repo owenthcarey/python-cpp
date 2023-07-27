@@ -8,6 +8,9 @@ class Person {
 public:
     Person(const std::string &name, int age);
 
+    std::string getName() const;
+    int getAge() const;
+
     std::string greet();
 
 private:
