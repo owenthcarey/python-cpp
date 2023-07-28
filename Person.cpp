@@ -14,3 +14,7 @@ int Person::getAge() const {
 std::string Person::greet() {
     return "Hello, my name is " + name + " and I'm " + std::to_string(age) + " years old.";
 }
+
+std::string Person::repr() const {
+    return "<Person name='" + name + "' age=" + std::to_string(age) + ">";
+}

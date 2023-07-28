@@ -13,6 +13,8 @@ public:
 
     std::string greet();
 
+    std::string repr() const;
+
 private:
     std::string name;
     int age;

@@ -9,5 +9,6 @@ PYBIND11_MODULE(tutorial, m) {
         .def(py::init<const std::string &, int>())
         .def("greet", &Person::greet)
         .def("get_name", &Person::getName)
-        .def("get_age", &Person::getAge);
+        .def("get_age", &Person::getAge)
+        .def("__repr__", &Person::repr);
 }
